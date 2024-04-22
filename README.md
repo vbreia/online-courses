@@ -13,10 +13,10 @@ Com base nesse caso de estudo, é possível explorar diferentes aspectos do dese
 - transações/compras
 
 ## Modelagem conceitual
-![](/doc/modelo-conceitual.png)
+![](doc/modelo-conceitual.png)
 
 ## Modelagem lógica
-![](/doc/modelo-logico.png)
+![](doc/modelo-logico.png)
 
 ## Modelagem física
-![](/doc/modelo-fisico.png)
+![](doc/modelo-fisico.png)
