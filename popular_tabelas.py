@@ -31,7 +31,11 @@ for _ in range(500):
         f"INSERT INTO usuarios (nome, email, cpf, telefone, data_nascimento, e_instrutor) VALUES ('{nome}', '{email}', '{cpf}', '{telefone}', '{data_nascimento}', {e_instutor})"
     )
 
+<<<<<<< HEAD
 Popular a tabela cursos 
+=======
+# Popular a tabela cursos 
+>>>>>>> 1bb81db (modified)
 for _ in range(10):
     nome = fake.word()
     descricao = fake.text()
