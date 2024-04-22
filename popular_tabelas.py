@@ -18,28 +18,28 @@ fake = Faker()
 
 cursor.execute('USE test')
 
-# # Popular a tabela usuarios
-# for _ in range(500):
-#     nome = fake.name()
-#     email = fake.email()
-#     cpf = fake.random_int(1000000000,9000000000)
-#     telefone = fake.random_int(1000000000,9000000000)
-#     data_nascimento = fake.date_of_birth(minimum_age=18, maximum_age=100)
-#     e_instutor = fake.boolean(chance_of_getting_true=50)
+# Popular a tabela usuarios
+for _ in range(500):
+    nome = fake.name()
+    email = fake.email()
+    cpf = fake.random_int(1000000000,9000000000)
+    telefone = fake.random_int(1000000000,9000000000)
+    data_nascimento = fake.date_of_birth(minimum_age=18, maximum_age=100)
+    e_instutor = fake.boolean(chance_of_getting_true=50)
 
-#     cursor.execute(
-#         f"INSERT INTO usuarios (nome, email, cpf, telefone, data_nascimento, e_instrutor) VALUES ('{nome}', '{email}', '{cpf}', '{telefone}', '{data_nascimento}', {e_instutor})"
-#     )
+    cursor.execute(
+        f"INSERT INTO usuarios (nome, email, cpf, telefone, data_nascimento, e_instrutor) VALUES ('{nome}', '{email}', '{cpf}', '{telefone}', '{data_nascimento}', {e_instutor})"
+    )
 
-# Popular a tabela cursos 
-# for _ in range(10):
-#     nome = fake.word()
-#     descricao = fake.text()
-#     valor = fake.random_int(100, 1000)
+Popular a tabela cursos 
+for _ in range(10):
+    nome = fake.word()
+    descricao = fake.text()
+    valor = fake.random_int(100, 1000)
 
-#     cursor.execute(
-#          f"INSERT INTO cursos (nome, descricao, valor) VALUES ('{nome}', '{descricao}', {valor})"
-#      )
+    cursor.execute(
+         f"INSERT INTO cursos (nome, descricao, valor) VALUES ('{nome}', '{descricao}', {valor})"
+     )
 
 # Primeiro, obtenha todos os IDs  existentes
 cursor.execute("SELECT id FROM usuarios")
