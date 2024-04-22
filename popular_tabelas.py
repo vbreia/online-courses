@@ -19,7 +19,7 @@ fake = Faker()
 cursor.execute('USE test')
 
 # Popular a tabela usuarios
-for _ in range(500):
+for _ in range(5900):
     nome = fake.name()
     email = fake.email()
     cpf = fake.random_int(1000000000,9000000000)
@@ -54,7 +54,7 @@ curso_ids = [row[0] for row in cursor.fetchall()]
 
 
 # Popular a tabela transacoes
-for _ in range(1000):
+for _ in range(300):
     id_usuario = random.choice(user_ids)
     id_curso = random.choice(curso_ids)
     metodo_pagamento = fake.random_element(elements=("cartao", "boleto", "pix"))
